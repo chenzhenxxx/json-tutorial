@@ -38,7 +38,7 @@ static int lept_parse_number(lept_context* c, lept_value* v) {
         if (!ISDIGIT1TO9(*p)) return LEPT_PARSE_INVALID_VALUE;
         for (p++; ISDIGIT(*p); p++);
     }
-    if (*p == '.') {
+    if (*p == '.') { 
         p++;
         if (!ISDIGIT(*p)) return LEPT_PARSE_INVALID_VALUE;
         for (p++; ISDIGIT(*p); p++);
